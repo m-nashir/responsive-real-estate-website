@@ -105,11 +105,17 @@ img{
 .nav-logo:hover{
     color: var(--first-color);
 }
-.button .nav-button {
-    display: none;
+.scroll-header{
+    background-color: var(--body-color);
+    box-shadow: 0 1px 4px hsla(228, 4%, 15%, .1);
 }
-
+.scroll-header .nav-logo{
+    color: var(--first-color);
+}
 /*========= MAIN ==========*/
+.main{
+    margin-bottom: 200px;
+}
 .home {
     background: linear-gradient(170deg,
                 hsl(0, 0%, 22%) 0%,
@@ -173,7 +179,9 @@ img{
 .button:hover{
     box-shadow: 0 4px 12px hsla(228, 66%, 45%, .25);
 }
-
+.nav-button {
+    display: none;
+}
 .home-value{
     display: flex;
     column-gap: 2rem;
@@ -215,6 +223,21 @@ img{
     box-shadow: 0 16px 32px hsla(228, 66%, 25%, .25);
 }
 
+/*========= LOGOS ==========*/
+.logos-container{
+    padding-top: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 2rem;
+    justify-items: center;
+}
+.logos-img img {
+    height: 60px;
+    opacity: 0.2;
+    transition: 0.3s;
+}
+.logos-img img:hover{
+    opacity: 0.6;
+}
 
 
 @media screen and (max-width: 1023px){
