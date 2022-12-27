@@ -239,6 +239,76 @@ img{
     opacity: 0.6;
 }
 
+/*========= POPULAR ==========*/
+.popular-container {
+    padding: 1rem 0 5rem;
+}
+.popular-card{
+    width: 290px;
+    background-color: var(--container-color);
+    padding: 0.5rem 0.5rem 1.5rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+    transition: 0.4s;
+}
+.popular-img {
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.popular-data {
+    padding: 0 1rem 0 .5rem;
+}
+.popular-price{
+    font-size: var(--h2-font-size);
+    color: var(--text-color);
+    margin-bottom: 0.25rem;
+}
+.popular-price span {
+    color: var(--second-color);
+}
+.popular-title {
+    font-size: var(--h3-font-size);
+    margin-bottom: 0.75rem;
+}
+.popular-desc {
+    font-size: var(--small-font-size);
+}
+.popular-card:hover {
+    box-shadow: 0 12px 16px hsla(228, 66%, 45%, .1);
+}
+/* Swiper  */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    content: '';
+}
+.swiper-button-prev,
+.swiper-button-next {
+    top: initial;
+    bottom: 0;
+    width: initial;
+    height: initial;
+    background-color: var(--container-color);
+    border: 2px solid var(--text-color-light);
+    padding: 6px;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    color: var(--first-color);
+    transition: 0.2s;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: var(--text-color-light);
+    color: var(--container-color);
+}
+.swiper-button-next{
+    right: calc(50% - 3rem)
+}
+.swiper-button-prev{
+    left: calc(50% - 3rem)
+}
+
+
+
 
 @media screen and (max-width: 1023px){
     .nav-menu{
