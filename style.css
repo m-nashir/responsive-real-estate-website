@@ -312,8 +312,54 @@ img{
 .value-container{
     row-gap: 3rem;
 }
-
-
+.value-images{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.value-orbe{
+    width: 266px;
+    height: 316px;
+    background-color: hsl(228, 24%, 97%);
+    border-radius: 135px 135px 16px 16px;
+}
+.value-img{
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 125px 125px 12px 12px;
+    inset: 0;
+    margin: auto;
+    box-shadow: 0 16px 32px hsla(228, 66%, 25%, .25);
+}
+.value-desc{
+    font-size: var(--small-font-size);
+    margin-bottom: 2rem;
+}
+.value-accordion{
+    display: grid;
+    row-gap: 1.5rem;
+}
+.value-accordion-item {
+    background-color: var(--body-color);
+    border: 2px solid var(--border-color);
+    border-radius: .5rem;
+    padding: 1rem .75rem;
+}
+.value-accordion-header{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.value-accordion-icon{
+    background-color: var(--first-color-lighten);
+    padding: 5px;
+    border-radius: .25rem;
+    font-size: 18px;
+    color: var(--first-color);
+    transition: 0.3s;
+}
 
 @media screen and (max-width: 1023px){
     .nav-menu{
