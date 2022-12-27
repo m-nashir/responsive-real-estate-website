@@ -308,6 +308,11 @@ img{
 }
 
 
+/*========= VALUE ==========*/
+.value-container{
+    row-gap: 3rem;
+}
+
 
 
 @media screen and (max-width: 1023px){
