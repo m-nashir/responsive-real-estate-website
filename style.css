@@ -359,6 +359,44 @@ img{
     font-size: 18px;
     color: var(--first-color);
     transition: 0.3s;
+    margin-right: 0.75rem;
+}
+.value-accordion-title{
+    font-size: var(--small-font-size);
+}
+.value-accordion-arrow{
+    display: inline-flex;
+    background-color: var(--first-color-lighten);
+    padding: 0.25rem; 
+    color: var(--first-color);
+    border-radius: 2px;
+    font-size: 10px;
+    margin-left: auto;
+    transition: 0.3s;
+}
+.value-accordion-arrow i{
+    transition: 0.3s;
+}
+.value-accordion-content {
+    overflow: hidden;
+    height: 0;
+    transition: all .25s ease;
+}
+.value-accordion-desc{
+    font-size: var(--smaller-font-size);
+    padding: 1.25rem 2.5rem 0 2.75rem;
+}
+.accordion-open {
+    box-shadow: 0 12px 32px hsla(228, 66%, 45%, .1);
+}
+.accordion-open .value-accordion-icon {
+    box-shadow: 0 4px 4px hsla(228, 66%, 45%, .1);
+}
+.accordion-open .value-accordion-arrow {
+    box-shadow: 0 2px 4px hsla(228, 66%, 45%, .1);
+}
+.accordion-open .value-accordion-arrow i {
+    transform: rotate(180deg);
 }
 
 @media screen and (max-width: 1023px){

@@ -19,3 +19,32 @@ var swiperPopular = new Swiper(".popular-container", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+  /* VALUE ACCORDION */
+let accordionItems =  document.querySelectorAll('.value-accordion-item')
+
+accordionItems.forEach((item) => {
+  const accordionHeader = item.querySelector('.value-accordion-header')
+
+  accordionHeader.addEventListener('click', () => {
+    const openItem = document.querySelector('.accordion-open')
+    
+    toggleItem(item)
+
+    if (openItem && openItem !== item){
+      toggleItem(openItem)
+    }
+  })
+})
+
+const toggleItem = (item) => {
+  const accordionContent = document.querySelector('.value-accordion-content')
+
+  if (item.classList.contains('accordion-open')){
+    accordionContent.removeAttribute('style')
+    item.classList.remove('accordion-open')
+  } else {
+    accordionContent.style.height = accordionContent.scrollHeight + 'px'
+    item.classList.add('accordion-open')
+  }
+}
