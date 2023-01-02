@@ -25,10 +25,10 @@ var swiperPopular = new Swiper(".popular-container", {
 let accordionItems =  document.querySelectorAll('.value-accordion-item')
 
 accordionItems.forEach((item) => {
-  const accordionHeader = item.querySelector('.value-accordion-header')
+  let accordionHeader = item.querySelector('.value-accordion-header')
 
   accordionHeader.addEventListener('click', () => {
-    const openItem = document.querySelector('.accordion-open')
+    let openItem = document.querySelector('.accordion-open')
     
     toggleItem(item)
 
@@ -55,10 +55,10 @@ const toggleItem = (item) => {
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive(){
-    const scrollY = window.pageYOffset
+    const scrollY = window.pageYOffset;
 
     sections.forEach(current => {
-      const sectionHeight = current.offsetHeight,
+      let sectionHeight = current.offsetHeight,
             sectionTop = current.offsetTop - 58,
             sectionId = current.getAttribute('id')
 

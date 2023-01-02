@@ -74,6 +74,8 @@ img{
     font-size: var(--small-font-size);
     color: var(--second-color);
 }
+
+
 /*========= HEADER ==========*/
 .header{
     position: fixed;
@@ -119,6 +121,8 @@ img{
     box-shadow: 0 4px 8px hsla(228, 66%, 45%, .25);
     color: #fff;
 }
+
+
 /*========= MAIN ==========*/
 .main{
     margin-bottom: 200px;
